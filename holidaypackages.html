@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Holiday Packages</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+/* Style the header */
+header {
+  background-color: #470147;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav, aside {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #35012c;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #290025;
+  padding: 10px;
+  color: white;
+  height: 550px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #11001c;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Holiday Packages</h2>
+</header>
+  <nav>
+    <ul>
+      <li><a href="#">Itinerary</a></li>
+      <li><a href="#">Tips</a></li>
+      <li><a href="#">Adventures</a></li>
+    </ul>
+  </nav>
+
+
+<section>
+  <aside>
+    <h4>History At The Smithsonian</h4>
+    <h4>Bush Camp and Walks Zambia</h4>
+    <h4>Northen Lights In Norway</h4>
+   </aside>
+  
+  <article>
+    <h1>History At The Smithsonian</h1>
+    
+    <img src="">
+
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+  </article>
+</section>
+
+<footer>
+  <p>Contact Us</p>
+</footer>
+
+</body>
+</html>
